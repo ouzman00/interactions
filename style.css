@@ -1,0 +1,82 @@
+        body
+        {
+            background: linear-gradient(to right, #f0f4f8, #c9d6e3); /* Fond dégradé doux */
+            font-family: 'Arial', sans-serif;
+        }
+
+        #map {
+            height: 500px;
+            width: 100%;
+            border-radius: 10px; /* Bords arrondis */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Ombre subtile */
+        }
+
+        /* Style pour la fenêtre de bienvenue */
+        .welcome-window {
+            position: fixed;
+            top: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 20px;
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            border-radius: 12px;
+            display: none; /* Masquée par défaut */
+            animation: fadeIn 2s ease-in-out; /* Animation d'apparition */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Ombre sur la fenêtre */
+        }
+
+        /* Animation pour l'effet de fade-in */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .welcome-window h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .welcome-window p {
+            font-size: 1.2rem;
+        }
+
+        .close-btn {
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            position: absolute;
+            top: 5px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            opacity: 0.7;
+        }
+
+        /* Style du footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #343a40;
+            padding: 15px 0;
+            text-align: center;
+            border-top: 2px solid #ccc;
+            color: white;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }

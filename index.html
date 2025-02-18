@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte Leaflet avec Bootstrap</title>
+    <!-- Lien vers la feuille de style de Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lien vers la feuille de style de Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+
+    <!-- Fenêtre de bienvenue animée -->
+    <div class="welcome-window" id="welcome-window">
+        <button class="close-btn" onclick="closeWelcomeWindow()">×</button>
+        <h3>Bienvenue à Mballing!</h3>
+        <p>Explorez la carte et découvrez les différents points d'intérêt.</p>
+    </div>
+
+    <!-- Conteneur Bootstrap pour centrer la carte -->
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Carte du Sénégal (Mballing)</h1>
+        <div id="map"></div>
+    </div>
+
+    <!-- Lien vers les fichiers JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Lien vers le fichier JavaScript de Leaflet -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Footer avec informations personnelles -->
+    <footer>
+        <p>
+            <span>Ousmane Coulibaly</span><br>
+            Adresse : <a href="https://www.google.com/maps?q=14.6928,-17.4467" target="_blank">Dakar, Sénégal</a><br>
+            Email : <a href="mailto:example@example.com">example@example.com</a>
+        </p>
+    </footer>
+        <script src = "fichier.js"></script>
+</body>
+</html>
